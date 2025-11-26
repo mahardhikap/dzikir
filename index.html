@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dzikir Sunnah — Pilih Pagi atau Petang</title>
+  <meta name="description" content="Landing page untuk menuju Dzikir Pagi atau Dzikir Petang — DzikirSunnah" />
+  <style>
+    :root{--bg:#f8fafc;--card:#ffffff;--muted:#6b7280;--accent:#0b5;--primary:#0f172a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);color:var(--primary);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+    .wrap{max-width:980px;width:100%}
+    .header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0ea5a9,#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 8px 24px rgba(2,6,23,0.06)}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 10px 30px rgba(15,23,42,0.06);display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+    .card h2{margin:0;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    .cta{margin-top:auto;display:flex;gap:10px;width:100%}
+    .btn{flex:1;padding:12px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600;font-size:15px}
+    .btn-primary{background:#0ea5a9;color:#fff}
+    .btn-ghost{background:transparent;border:1px solid #e6eef0;color:var(--primary)}
+    .meta{font-size:13px;color:var(--muted);margin-top:12px}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:760px){
+      .grid{grid-template-columns:1fr}
+      .header{gap:12px}
+      .logo{width:54px;height:54px;font-size:18px}
+      h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="logo" aria-hidden>DS</div>
+      <div>
+        <h1>Dzikir Sunnah</h1>
+        <p class="lead">Pilih kumpulan dzikir yang ingin dibuka — pagi atau petang.</p>
+      </div>
+    </header>
+
+    <section class="grid" role="list">
+      <article class="card" role="listitem" aria-labelledby="morning-title">
+        <div>
+          <h2 id="morning-title">Dzikir Pagi</h2>
+          <p>Buka kumpulan dzikir pagi: Ayat Kursi, tiga Qul, doa-doa pagi, dan rangkaian dzikir sunnah.</p>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://dzikirsunnah.vercel.app/morning_dzikr.html" role="button">Buka Dzikir Pagi →</a>
+        </div>
+        <div class="meta">URL: dzikirsunnah.vercel.app/morning_dzikr.html</div>
+      </article>
+
+      <article class="card" role="listitem" aria-labelledby="evening-title">
+        <div>
+          <h2 id="evening-title">Dzikir Petang</h2>
+          <p>Buka kumpulan dzikir petang: bacaan petang, doa perlindungan, dan penutup harian.</p>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://dzikirsunnah.vercel.app/#" role="button">Buka Dzikir Petang →</a>
+        </div>
+        <div class="meta">URL: dzikirsunnah.vercel.app/#</div>
+      </article>
+
+    </section>
+
+    <footer>
+      <div>Tip: klik tombol utama untuk langsung menuju halaman.</div>
+    </footer>
+  </main>
+
+  <!-- Optional: small inline script untuk smooth focus -->
+</body>
+</html>
